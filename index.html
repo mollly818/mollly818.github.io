@@ -7,5 +7,31 @@
     </head>
     <body>
         HI~
+
+        <div id="wallet" hidden>
+            <a href="wallet:// ">apple pay</a>
+        </div>
+
+        <script type="text/javascript">
+            //判断访问终端
+            var browser={
+                versions:function(){
+                    var u = navigator.userAgent, app = navigator.appVersion;
+                    return {
+                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                        iPhone: u.indexOf('iPhone') > -1//是否为iPhone或者QQHD浏览器
+                    };
+                }()
+            }
+
+            if(browser.versions.mobile||browser.versions.ios||browser.versions.iPhone){ 
+                alert("iPhone"); 
+                if(document.body.clientWidth >= 375){
+                    alert(document.body.clientWidth);
+                    document.getElementById("wallet").style.display = "block";
+                }
+            }
+        </script>
     </body>
 </html>
