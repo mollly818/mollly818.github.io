@@ -2,37 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
         <title>molly</title>
-        <link rel="shortcut icon" href="favicon.ico" /> 
+        <link rel="shortcut icon" href="favicon.ico" />
+        <!--[if IE]>
+            <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+        <![endif]--> 
     </head>
     <body>
-        HI~
-        <a href="wallet:// ">apple pay333</a>
-        <div id="wallet" hidden>
-            <a href="wallet:// ">apple pay</a>
-        </div>
-
-        <script type="text/javascript">
-            //判断访问终端
-            var browser={
-                versions:function(){
-                    var u = navigator.userAgent, app = navigator.appVersion;
-                    return {
-                        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
-                        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-                        iPhone: u.indexOf('iPhone') > -1//是否为iPhone或者QQHD浏览器
-                    };
-                }()
-            }
-
-            if(browser.versions.mobile||browser.versions.ios||browser.versions.iPhone){ 
-                alert("iPhone"); 
-                if(document.body.clientWidth > 320){
-                    alert(document.body.clientWidth);
-                    document.getElementById("wallet").style.display = "block";
-                }
-            }
-        </script>
+        
     </body>
 </html>
