@@ -12,9 +12,18 @@
     </head>
     <body>
 
-        <form action="javascript:return true;">
-            <input id="keyword" type="search" name="search" value="" placeholder="输入商户查询本市优惠">
+        <form action="" >
+            <input id="keyword" type="search" name="search" value="" placeholder="输入商户查询本市优惠" onsearch="myFunction()">
+            <div id="demo"></div>
         </form>
+
+        <script>
+            function myFunction() {
+               var x = document.getElementById("keyword");
+               document.getElementById("demo").innerHTML = "搜索的内容为：" + x.value;
+            }
+        </script>
+
 
         <div id="demo"></div>
     </body>
