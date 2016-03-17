@@ -11,15 +11,7 @@
         <![endif]--> 
     </head>
     <body>
-
-
-
-        <p>在搜索文本域中输入信息并按下 "ENTER" 键。</p>
-
         <input type="search" id="myInput" onsearch="myFunction()">
-
-        <p><strong>注意：</strong>Internet Explorer, Firefox 或 Opera 12 及其更早版本不支持 onsearch 事件。</p>
-
         <p id="demo"></p>
 
         <script>
@@ -28,11 +20,9 @@
            document.getElementById("demo").innerHTML = "您搜索的内容为：" + x.value;
         }
         </script>
-
-
     </body>
     <script>
-        var x=document.getElementById("demo111");
+        var x=document.getElementById("demo");
         function getLocation(){
             if (navigator.geolocation){
                 navigator.geolocation.getCurrentPosition(showPosition);
