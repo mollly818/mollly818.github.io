@@ -12,24 +12,27 @@
     </head>
     <body>
 
-        <!-- <form action="" > -->
-        <!-- </form> -->
-            <input id="keyword" type="search" name="search" value="" placeholder="商户查询本市优惠" onsearch="myFunction()">
-            <div id="ss"></div>
-        
+
+
+        <p>在搜索文本域中输入信息并按下 "ENTER" 键。</p>
+
+        <input type="search" id="myInput" onsearch="myFunction()">
+
+        <p><strong>注意：</strong>Internet Explorer, Firefox 或 Opera 12 及其更早版本不支持 onsearch 事件。</p>
+
+        <p id="demo"></p>
 
         <script>
-            function myFunction() {
-               var x = document.getElementById("keyword");
-               document.getElementById("ss").innerHTML = "搜索的内容为：" + x.value;
-            }
+        function myFunction() {
+           var x = document.getElementById("myInput");
+           document.getElementById("demo").innerHTML = "您搜索的内容为：" + x.value;
+        }
         </script>
 
 
-        <!-- <div id="demo"></div> -->
     </body>
     <script>
-        var x=document.getElementById("demo");
+        var x=document.getElementById("demo111");
         function getLocation(){
             if (navigator.geolocation){
                 navigator.geolocation.getCurrentPosition(showPosition);
@@ -44,5 +47,5 @@
 
 
         getLocation();
-</script>
+    </script>
 </html>
