@@ -11,43 +11,12 @@
         <![endif]--> 
     </head>
     <body>
-
-        <form action="javascript:return true;">
-            <span>form input</span>
-            <input id="keyword" type="search" name="search" value="" placeholder="输入商户查询本市优惠">
-        </form>
-
-        <form action="demo-form.php">
-            用户名: <input type="text" name="usrname"><br>
-            <input type="submit" value="提交">
-        </form>
-
-        
-        <input type="search" id="myInput" onsearch="myFunction()">
-        <p id="demo"></p>
-
-        <script>
-        function myFunction() {
-           var x = document.getElementById("myInput");
-           document.getElementById("demo").innerHTML = "您搜索的内容为：" + x.value;
-        }
+        <div id="info"></div>
+        <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+        <script type="text/javascript">
+            console.log(WURFL);
+            alert(WURFL);
+            document.getElementById(info).innerHTML(WURFL);
         </script>
     </body>
-    <script>
-        var x=document.getElementById("demo");
-        function getLocation(){
-            if (navigator.geolocation){
-                navigator.geolocation.getCurrentPosition(showPosition);
-            }
-            else{
-                x.innerHTML="该浏览器不支持获取地理位置。";
-            }
-        }
-        function showPosition(position){
-          x.innerHTML="Latitude: " + position.coords.latitude +"<br>Longitude: " + position.coords.longitude; 
-        }
-
-
-        getLocation();
-    </script>
 </html>
