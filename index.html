@@ -1,26 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-        <title>molly</title>
-        <link rel="shortcut icon" href="favicon.ico" />
-        <!--[if IE]>
-            <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
-        <![endif]--> 
-    </head>
-    <body>
-        <div id="info"></div>
-        <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
-        <script src="http://code.jquery.com/jquery-1.8.0.min.js" ></script>
-        <script type="text/javascript">
-            console.log(WURFL);
-            var temp = "";
-            $.each(WURFL, function(index, val) {
-                 temp += index+":"+WURFL[index]+"<br/>";
-            });
-            document.getElementById('info').innerHTML = temp;
-        </script>
-    </body>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/page.css">
+		<script src="js/zepto.min.js"></script>
+		<script src="js/swiper-3.3.1.min.js"></script>
+		<script>
+			(function(w,d){
+				function wResize(){
+					d.documentElement.style.fontSize=20*d.documentElement.clientWidth/375+'px';
+				}
+				wResize();
+				window.addEventListener('resize',wResize,false);
+			})(window,document);
+
+
+		</script>	
+	</head>
+	<body class="swiper-container"> 
+		<div class="musicbtn" id="musicbtn">
+			<img src="img/music.png"  />
+		</div>
+		<audio id="musicfx" loop="loop" autoplay="autoplay">
+            <source src="music/music.mp3" type="audio/mp3">
+        </audio>
+	<div class="swiper-wrapper box">
+<!-- 第一屏 -->
+<!-- 第一屏 -->
+	<div class="swiper-slide container" id="index" >
+		<div class="logo">
+		</div>
+		<div class="triangle roate rote">
+	
+		</div>
+		<div class="text">
+		<div class="year2015 animated fadeInRight" style="transition-duration: 1s;">
+			<img src="img/2015.png" class="yearNum"><img src="img/year.png" class="year">
+		</div>
+		<pre id="aa" ></pre> 
+		<div style="display:none" id="we">
+			业绩公布
+		</div>
+		</div>
+		<div class="builds">
+		<div class="build2 animated fadeInUp"></div>
+		<div class="build1 animated fadeInUp"></div>
+		</div>
+		<div class="yun xuanhaun">
+		</div>
+	</div>
+	<script language="javascript"> 
+		$('.build1').animate({
+			 bottom:'0rem'
+		},1200,function(){
+			$('.build2').animate({
+				 bottom:'0rem'
+			},500)
+		})
+		var index=0; 		
+		var word=document.getElementById("we").innerHTML; 		
+		function type(){ 		
+		    document.getElementById("aa").innerText = word.substring(0,index++); 		
+		} 		
+		setInterval(type, 500); 
+	</script>
+
+<!-- 第2屏 -->	
+	<div class="swiper-slide container" id="twopage">
+		<div class="contant ">
+<div class="logo">
+</div>
+<div class="hangzhang bannering paused">
+</div>
+<div class="colo jade paused">
+</div>
+<div class="blueone leftgo paused">
+<div class="bluepolo bottomgo paused"></div>
+</div>
+<div class="bluetwo leftgo paused">
+<div class="bluecolo bottomgo paused "></div>
+</div>
+</div>
+	</div>
+<!--第3屏-->	
+<!--第3屏-->	
+	<div class="swiper-slide container" id="thirdpage">
+			<div class="logo"></div>
+			
+			<div class="blackboard">
+				<div class="blacktext">
+					中国银行董事长田国立表示，中国银行紧密围绕国家战略，坚持“担当社会责任，做最好的银行”的战略目标，充分发挥自身在国际化方面的竞争优势
+				</div>
+				<div class="rounds">
+					<ul>
+						<li class="animated lightSpeedIn paused" id="firstround">人民币国际化</li>
+						<li class="animated lightSpeedIn paused" id="secondround">利率市场化</li>
+						<li class="animated lightSpeedIn paused" id="thirdround">互联网金融</li>
+					</ul>
+				</div>
+				<div class="arrow  animated fadeInUp paused"><div class="arrownum animated bounceInDown paused"></div></div>
+				<div class="bottom-build"></div>
+				<div class="tip">
+					连续5年入选全球系统重要性银行市场地位持续提升
+				</div>
+			</div>
+			<div class="men">
+					<div class="menBaton"></div>
+				</div>
+				<div class="desk">
+					
+			</div>
+			<div class="bglink" hidden>
+				<div class="flowertip">献束花！</div>
+				<div class="flower" id="flower"></div>
+				<div class="drophere">
+					
+				</div>
+			</div>
+	</div>
+<!--第4屏-->
+	<div class="container swiper-slide contant" id="fourpage">
+		<div class="logo">
+		</div>
+		<div class="banner bannering paused"></div>
+		<div class="dong">
+			<div class="dong1 dongleft paused"></div>
+			<div class="dong2 dongmid paused"></div>
+			<div class="dong3 dongright paused"></div>
+		</div>
+		<div class="yuan">
+			<div class="yuana yuanleft paused"></div>
+			<div class="bodera boderaleft paused"></div>
+			<div class="yuang yuanmid paused"></div>
+			<div class="boderg bodermid paused"></div>
+			<div class="yuanx yuanright paused"></div>
+			<div class="boderx boderight paused"></div>
+		</div>
+	</div>
+<!--第5屏-->	
+	<div class="container swiper-slide" id="fivepage">
+			<div class="logo"></div>
+			<div class="fourpage">
+				<img src="img/fourtitle.png" />
+			</div>
+			<div class="chart">
+				<div class="redchart animated slideInLeft paused">
+					<img src="img/fourred.png" />
+				</div>
+				<div class="orangechart animated slideInRight paused">
+					<img src="img/fourorange.png" />
+				</div>
+				<div class="yellowchart  animated slideInLeft paused">
+					<img src="img/fouryellow.png" />
+				</div>
+				<div class="greenchart  animated slideInUp paused">
+					<img src="img/fourgreen.png" />
+				</div>
+				<div class="bluechart  animated slideInUp paused">
+					<img src="img/fourblue.png" />
+				</div>
+			</div>
+			<div class="page4text animated fadeInRight paused">
+				<img src="img/page4text.png" />
+			</div>
+			<div class="men">
+				<div class="menBaton"></div>
+			</div>
+			<div class="desk">
+				
+			</div>
+		</div>
+<!--第6屏-->
+	<div class="container swiper-slide contant" id="sixpage">
+		<div class="logo">
+		</div>
+		<div class="fuwu bannering paused"></div>
+		<div class="haerd dongleft paused">
+			<!-- <img src="img/p5-chart.png"> -->
+			<!-- <div class="zhuiz1 paused"></div>
+			<div class="zhuiz2 paused"></div>
+			<div class="zhuiz3 paused"></div> -->
+		</div>
+		<div class="fourt fourting paused"></div>
+	</div>
+	<!--第7屏-->
+	<div class="container swiper-slide contant" id="sevenpage">
+		<div class="logo">
+		</div>
+		<div class="xinwen1 bannering paused"></div>
+		<div class="xinwen2 dongmid paused"></div>
+		<div class="xinwen3 fourting paused"></div>
+		<div class="xinf1 dongleft paused"></div>
+		<div class="xinf2 dongright paused"></div>
+		<div class="xinf3 dongleft paused"></div>
+		<div class="xinf4 dongright paused"></div>
+	</div>
+	<!--第8屏-->
+	<div class="container swiper-slide eightpage" id="eightpage" id="eightpage">
+		<div class="logo"></div>
+		<div class="eighttitle animated fadeInLeft paused">
+			<img src="img/eighttitle.png" />
+		</div>
+		<div class="eightcontent animated fadeInRight paused">
+			<img src="img/eightcontent.png" />
+		</div>
+		<div class="eightbottom animated fadeInDown paused">
+			<img src="img/eightbottom.png" />
+		</div>
+	</div>
+	<!--第9屏-->
+	<div class="container swiper-slide contant" id="ninepage">
+		<div class="logo">
+		</div>
+		<div class="need bannering paused"></div>
+		<div class="need1 dongmid paused"></div>
+		<div class="need2 dongright paused"></div>
+		<div class="need3 dongleft paused"></div>
+		
+	</div>
+	<!--第10屏-->	
+	<div class="container swiper-slide tenpage" id="tenpage">
+		<div class="logo"></div>
+		<div class="tentitle animated fadeInLeft paused">
+			<img src="img/tenpagetitle.png" />
+		</div>
+		<div class="tencontent animated fadeInRight paused">
+			<img src="img/tencontent.png" />
+		</div>
+		<div class="tentbottom animated fadeInDown paused">
+			<img src="img/tenbottom.png" />
+		</div>
+	</div>
+<!--第11屏-->
+	<div class="container swiper-slide contant" id="elevenpage">
+		<div class="logo">
+		</div>
+		<div class="shiyi bannering paused"></div>
+		<div class="shiyi1 dongmid paused"></div>
+		<div class="shiyi3 dongleft paused"></div>
+		<div class="shiyi2 dongright paused"></div>
+		<div class="shiyi4 dongleft paused"></div>
+		<div class="shiyi5 dongright paused"></div>
+		<div class="shiyi6 dongright paused"></div>
+		<div class="shiyi7 dongleft paused"></div>
+		<div class="shiyi8 bannering paused"></div>
+		<div class="shiyi9 dongmid paused"></div>
+		
+	</div>
+	
+	
+<!--end屏-->
+	<div class="container swiper-slide" id="end">
+<!-- 		<div class="">
+				<img src="img/bg.png" />
+			</div> -->
+			<div class="logo">
+			</div>
+			<div class="triangle roate animated fadeOutRight paused">
+		
+			</div>
+		<div class="text">
+			<pre id="aa" ></pre> 
+			<div style="display:none" id="we">
+			2016年
+				展望未来
+			</div>
+		</div>
+		<div class="builds">
+			<div class="build2 animated fadeOutDown paused"></div>
+			<div class="build1 animated fadeOutDown paused"></div>
+		</div>
+		<div class="yun xuanhaun paused"></div>
+		<div class="erimg animated fadeInDown paused">
+			<img src="img/er.png" />
+		</div>
+		<div class="endword back animated fadeOutUp paused">
+			<img src="img/endword.png" />
+		</div>
+	</div>
+<!--swiper end-->		
+		</div>
+	</body>
+
+	<script>
+
+	function autoPlayMusic() {
+    // 自动播放音乐效果，解决浏览器或者APP自动播放问题
+    function musicInBrowserHandler() {
+        musicPlay(true);
+        document.body.removeEventListener('touchstart', musicInBrowserHandler);
+    }
+    document.body.addEventListener('touchstart', musicInBrowserHandler);
+
+    // 自动播放音乐效果，解决微信自动播放问题
+    function musicInWeixinHandler() {
+        musicPlay(true);
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            musicPlay(true);
+        }, false);
+        document.removeEventListener('DOMContentLoaded', musicInWeixinHandler);
+    }
+    document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
+}
+function musicPlay(isPlay) {
+    var media = document.querySelector('#bg-music');
+    if (isPlay && media.paused) {
+        media.play();
+    }
+    if (!isPlay && !media.paused) {
+        media.pause();
+    }
+}
+
+		var audio = document.getElementById('musicfx')
+		var music_Btn = true;
+		$('#musicbtn').tap(function(){
+			if(music_Btn){
+				audio.pause()
+			}else{
+				audio.play()
+			}
+			music_Btn = !music_Btn;
+		})
+
+
+		var num = 0 ;
+		var swiper = new Swiper('.swiper-container',{
+			pagination: '.swiper-pagination',  //生成小圆点 
+			paginationClickable: true, //允许点击
+//			loop: true,
+//			autoplay:10000,
+			autoplayDisableOnInteraction:false,
+			mousewheelControl: true,
+			keyboardControl: true,
+			direction:'vertical',
+			onSlidePrevStart: function(swiper){
+			    num--;
+			   },
+			onSlideNextEnd: function(swiper){
+		    	num++;
+		    	switch(num){
+					case 1 : $('#twopage .paused').removeClass('paused');
+							break;
+					case 2 : $('#thirdpage .paused').removeClass('paused');
+							setTimeout(function(){
+								$('.bglink').show()
+							},5000)
+							break;
+					case 3 : $('#fourpage .paused').removeClass('paused');
+							break;
+					case 4 : $('#fivepage .paused').removeClass('paused');
+							break;
+					case 5 : $('#sixpage .paused').removeClass('paused');
+							break;
+					case 6 : $('#sevenpage .paused').removeClass('paused');
+							break;
+					
+					case 7 : $('#eightpage .paused').removeClass('paused');
+							break;		
+					case 8 : $('#ninepage .paused').removeClass('paused');
+							break;
+					case 9 : $('#tenpage .paused').removeClass('paused');
+							break;
+					case 10 : $('#elevenpage .paused').removeClass('paused');
+							break;
+					case 11 : $('#end .paused').removeClass('paused');
+							break;
+					}
+			    }
+			
+		});
+
+
+
+
+		
+
+	</script>
+	<script>
+		//第3屏
+			$(document).on("touchstart","#flower",function(event){
+			    var touchPros = event.touches[0];
+			    startX = touchPros.pageX - event.target.offsetLeft;
+			    startY = touchPros.pageY - event.target.offsetTop;
+			    return false;
+			  }).on("touchmove","#flower",function(event){		   
+			    var touchPros = event.touches[0];
+			    moveX = touchPros.pageX - startX;
+			    moveY = touchPros.pageY - startY;
+			    if(moveY < 0 ) moveY = 0
+			    $('#flower').css('left',moveX).css('top',moveY);		      
+			  }).on("touchend","#flower",function(event){
+			 	if($('#flower').offset().left < 50 && $('#flower').offset().top < $('.container').height()*0.8){
+					//link
+					swiper.slideNext();
+				}
+	
+			});
+		</script>
 </html>
