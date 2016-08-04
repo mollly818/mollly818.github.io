@@ -346,11 +346,11 @@ opacity: 1;}
 }
 
 .dong1{
-    height: 30%;
+    height: 9rem;
     position: absolute;
     background: url(../img/dong1.png) no-repeat;
     /* background-position: bottom left; */
-    top: 12.35rem;
+    top: 13.35rem;
     /* left: 1rem; */
         background-size: 100% 100%;
     z-index: 2;
@@ -402,7 +402,7 @@ opacity: 1;}
 opacity: 1;}
 }
 .dong2{
-        height: 35%;
+        height: 13rem;
     position: absolute;
     background: url(../img/dong2.png) no-repeat;
     /* background-position: bottom left; */
@@ -414,7 +414,7 @@ opacity: 1;}
 
 }
 .dong3{
-     height: 45%;
+     height: 15rem;
     position: absolute;
     background: url(../img/dong3.png) no-repeat;
     /* background-position: bottom left; */
@@ -727,11 +727,11 @@ opacity: 1;}
 }
 /*第七页*/
 .xinwen1{
-        height: 20%;
+    height: 20%;
     position: absolute;
     background: url(../img/xinwen.png) no-repeat;
     /* background-position: bottom left; */
-    top: 3rem;
+    top: 2.5rem;
     left: 3rem;
     background-size: 100%;
     z-index: 2;
@@ -743,7 +743,7 @@ opacity: 1;}
     position: absolute;
     background: url(../img/xinwen3.png) no-repeat;
     /* background-position: bottom left; */
-    top: 12.5rem;
+    top: 10.8rem;
     left: 3rem;
     background-size: 100%;
     z-index: 2;
@@ -755,7 +755,7 @@ opacity: 1;}
     position: absolute;
     background: url(../img/xinwen2.png) no-repeat;
     /* background-position: bottom left; */
-    top: 20rem;
+    top: 16.8rem;
     left: 2rem;
     background-size: 100%;
     z-index: 2;
@@ -767,7 +767,7 @@ height: 20%;
     position: absolute;
     background: url(../img/xinf1.png) no-repeat;
     /* background-position: bottom left; */
-    top: 8.5rem;
+    top: 7.6rem;
     left: 2rem;
     background-size: 100%;
     z-index: 2;
@@ -778,7 +778,7 @@ height: 20%;
     position: absolute;
     background: url(../img/xinf2.png) no-repeat;
     /* background-position: bottom left; */
-    top: 8.5rem;
+    top: 7.6rem;
     left: 11.5rem;
     background-size: 100%;
     z-index: 2;
@@ -789,7 +789,7 @@ height: 20%;
     position: absolute;
     background: url(../img/xinf3.png) no-repeat;
     /* background-position: bottom left; */
-    top: 16rem;
+    top: 13.5rem;
     left: 2rem;
     background-size: 100%;
     z-index: 2;
@@ -800,7 +800,7 @@ height: 20%;
     position: absolute;
     background: url(../img/xinf4.png) no-repeat;
     /* background-position: bottom left; */
-    top: 16rem;
+    top: 13.5rem;
     left: 11.5rem;
     background-size: 100%;
     z-index: 2;
@@ -808,23 +808,22 @@ height: 20%;
 }
 /*第九页*/
 .need{
-       height: 20%;
+    height: 20%;
     position: absolute;
     background: url(../img/zhong1.png) no-repeat;
     /* background-position: bottom left; */
-    top: 3rem;
+    top: 2.5rem;
     left: 2rem;
     background-size: 100%;
     z-index: 2;
     width: 80%;
-
 }
 .need1{
    height: 40%;
     position: absolute;
     background: url(../img/zhong2.png) no-repeat;
     /* background-position: bottom left; */
-    top: 8.9rem;
+    top: 8.4rem;
     left: 1rem;
     background-size: 100%;
     z-index: 2;
@@ -836,8 +835,8 @@ height: 20%;
     position: absolute;
     background: url(../img/need.png) no-repeat;
     /* background-position: bottom left; */
-    top: 20rem;
-    left: 1rem;
+    top: 18rem;
+    left: .2rem;
     background-size: 100%;
     z-index: 2;
     width: 56%;
@@ -861,11 +860,11 @@ height: 20%;
     position: absolute;
     background: url(../img/dazao.png) no-repeat;
     /* background-position: bottom left; */
-    top: 3rem;
+    top: 2.5rem;
     left: 2rem;
     background-size: 100%;
     z-index: 2;
-    width: 80%;
+    width: 77%;
 
 }
 .shiyi1{
@@ -873,7 +872,7 @@ height: 20%;
     position: absolute;
     background: url(../img/dazao1.png) no-repeat;
     /* background-position: bottom left; */
-    top: 6.9rem;
+    top: 5.8rem;
     left: 6rem;
     background-size: 100%;
     z-index: 2;
@@ -885,7 +884,7 @@ height: 20%;
     position: absolute;
     background: url(../img/dazao3.png) no-repeat;
     /* background-position: bottom left; */
-    top: 10rem;
+    top: 9rem;
     left: 9rem;
     background-size: 100%;
     z-index: 2;
@@ -897,7 +896,7 @@ height: 20%;
     position: absolute;
     background: url(../img/dazao4.png) no-repeat;
     /* background-position: bottom left; */
-    top: 10rem;
+    top: 9rem;
     left: 4rem;
     background-size: 100%;
     z-index: 2;
@@ -908,7 +907,7 @@ height: 20%;
     position: absolute;
     background: url(../img/efu.png) no-repeat;
     /* background-position: bottom left; */
-    top: 19.5rem;
+    top: 18.8rem;
     left: 1rem;
     background-size: 100%;
     z-index: 2;
@@ -920,7 +919,7 @@ height: 20%;
     position: absolute;
     background: url(../img/efu2.png) no-repeat;
     /* background-position: bottom left; */
-    top: 19.5rem;
+    top: 18.8rem;
     left: 11.4rem;
     background-size: 100%;
     z-index: 2;
@@ -931,20 +930,20 @@ height: 20%;
     position: absolute;
     background: url(../img/efu3.png) no-repeat;
     /* background-position: bottom left; */
-    top: 26.5rem;
+    top: 26rem;
     left: 12.5rem;
     background-size: 100%;
     z-index: 2;
     width: 30%;
 }
 .shiyi7{
-    height: 30%;
+    height: 16%;
     position: absolute;
     background: url(../img/efu4.png) no-repeat;
     /* background-position: bottom left; */
-    top: 26.5rem;
+    top: 26rem;
     left: 1rem;
-    background-size: 100%;
+    background-size: 100% 100%;
     z-index: 2;
     width: 30%;
 }
@@ -953,7 +952,7 @@ height: 20%;
     position: absolute;
     background: url(../img/diqiu.png) no-repeat;
     /* background-position: bottom left; */
-    top: 21.5rem;
+    top: 20.5rem;
     left: 5.8rem;
     background-size: 100%;
     z-index: 2;
@@ -964,7 +963,7 @@ height: 20%;
     position: absolute;
     background: url(../img/dazao2.png) no-repeat;
      background-position: bottom left; 
-    top: 9rem;
+    top: 8rem;
     left: 2rem;
     background-size: 100%;
     z-index: 2;
